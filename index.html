@@ -378,6 +378,7 @@
 
     /* ── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 500px) {
+      .hero { height: auto; aspect-ratio: 4/3; max-height: none; }
       .stat-value { font-size: 1.25rem; }
       .stat-label { font-size: 0.66rem; }
       .stat-item  { padding: 14px 6px; }
@@ -397,7 +398,7 @@
   <!-- HERO -->
   <div class="hero">
     <img class="hero-img"
-         src="./home2.jpg"
+         src="./home.jpg"
          alt="1482 Wesley Drive, Griffin GA — exterior view">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -508,7 +509,7 @@
           <span class="feature-icon">🐕</span>
           <div>
             <span class="feature-label">Pet-Friendly</span>
-            <span class="feature-detail">Small dogs allowed with approval and additional fees</span>
+            <span class="feature-detail">Up to 2 dogs under 25 lbs. $250 refundable deposit + $25/month pet rent per dog. Breeds restricted by landlord's insurance. Current shot records required.</span>
           </div>
         </div>
 
@@ -575,12 +576,15 @@
 
         <div class="qual-item">
           <span class="qual-check">✓</span>
-          <span><strong>$4,400 available at move-in</strong> — first month's rent plus security deposit</span>
+          <span><strong>$4,400 available at move-in</strong> — first month's rent plus security deposit (pet deposit additional if applicable)</span>
         </div>
 
       </div>
-      <div class="note-box">
-        <strong>Utilities:</strong> Tenant pays all utilities. Lawn care and quarterly pest control are provided by landlord.
+      <div class="note-box" style="border-left-color: var(--gray);">
+        <strong>Tenant pays:</strong> All utilities — electric, gas, water, trash, internet
+      </div>
+      <div class="note-box" style="margin-top: 10px;">
+        <strong>Included by landlord:</strong> Lawn care &amp; quarterly pest control — at no additional cost to tenant
       </div>
     </section>
 
