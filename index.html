@@ -43,9 +43,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
 
     .logo {
@@ -345,6 +342,7 @@
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
 
     .btn {
@@ -392,7 +390,10 @@
   <!-- HEADER -->
   <header class="site-header">
     <a href="#" class="logo">AMPD <em>Properties</em></a>
-    <a href="https://www.avail.com/apply/VTwbWlk" class="header-btn">Apply Now →</a>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+      <a href="https://forms.gle/VQrSHSMKW1bsohkh8" class="header-btn">Interested? &rarr;</a>
+      <span style="font-size:0.7rem; color:rgba(255,255,255,0.7);">Free &middot; 2-minute form</span>
+    </div>
   </header>
 
   <!-- HERO -->
@@ -590,19 +591,22 @@
 
   </div><!-- /container -->
 
-  <!-- CTA -->
   <div class="cta-section">
     <div class="cta-heading">Interested in 1482 Wesley Drive?</div>
     <div class="cta-sub">Showings begin June 15 &nbsp;·&nbsp; Available July 10, 2026</div>
     <div class="cta-buttons">
-      <a href="https://www.avail.com/apply/VTwbWlk" class="btn btn-amber">Apply Now</a>
-      <a href="https://www.avail.com/l/61109135" class="btn btn-green" target="_blank" rel="noopener">View Full Listing</a>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+        <a href="https://forms.gle/VQrSHSMKW1bsohkh8" class="btn btn-amber" target="_blank" rel="noopener">Interested?</a>
+        <span style="font-size:0.78rem; color:var(--gray);">Free &middot; 2-minute form</span>
+      </div>
+      <a href="https://www.avail.com/apply/VTwbWlk" class="btn btn-green" target="_blank" rel="noopener">Apply Now</a>
+      <a href="https://www.avail.com/l/61109135" class="btn btn-green" target="_blank" rel="noopener" style="opacity:0.75;">View Full Listing</a>
     </div>
   </div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div>Questions? <a href="mailto:david@ampdproperties.com">david@ampdproperties.com</a> &nbsp;·&nbsp; <a href="tel:6785726848">678-572-6848</a></div>
+    <div>Questions? <a href="mailto:info@ampdproperties.com">info@ampdproperties.com</a></div>
     <div style="margin-top:5px;">© 2026 AMPD Properties LLC &nbsp;·&nbsp; Equal Housing Opportunity</div>
   </footer>
 
